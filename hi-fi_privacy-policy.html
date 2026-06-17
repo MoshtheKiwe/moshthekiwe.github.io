@@ -1,0 +1,367 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Privacy Policy for Hi-Fi, a local music player app."
+    />
+    <title>Hi-Fi Privacy Policy</title>
+    <style>
+      :root {
+        color-scheme: light;
+        --bg: #f5f0e8;
+        --panel: #fffaf2;
+        --panel-soft: #fbf4ea;
+        --text: #1f1b16;
+        --muted: #6f675d;
+        --line: #ded2c3;
+        --accent: #9a5a24;
+        --accent-deep: #653514;
+        --shadow: 0 22px 60px rgba(72, 48, 24, 0.14);
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        margin: 0;
+        background:
+          radial-gradient(circle at top left, rgba(154, 90, 36, 0.16), transparent 34rem),
+          linear-gradient(180deg, #fff8ef 0%, var(--bg) 45%, #eee5d8 100%);
+        color: var(--text);
+        font-family:
+          Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+          "Segoe UI", sans-serif;
+        line-height: 1.65;
+      }
+
+      a {
+        color: var(--accent-deep);
+        text-decoration-color: rgba(154, 90, 36, 0.45);
+        text-underline-offset: 0.18em;
+      }
+
+      main {
+        width: min(980px, calc(100% - 32px));
+        margin: 0 auto;
+        padding: 48px 0 72px;
+      }
+
+      .hero {
+        display: grid;
+        gap: 24px;
+        margin-bottom: 28px;
+        padding: 44px;
+        border: 1px solid rgba(101, 53, 20, 0.16);
+        border-radius: 20px;
+        background:
+          linear-gradient(135deg, rgba(255, 250, 242, 0.96), rgba(246, 233, 216, 0.94)),
+          var(--panel);
+        box-shadow: var(--shadow);
+      }
+
+      .eyebrow {
+        display: inline-flex;
+        width: fit-content;
+        align-items: center;
+        gap: 10px;
+        margin: 0;
+        padding: 7px 12px;
+        border: 1px solid rgba(154, 90, 36, 0.28);
+        border-radius: 999px;
+        color: var(--accent-deep);
+        background: rgba(154, 90, 36, 0.08);
+        font-size: 0.82rem;
+        font-weight: 700;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+      }
+
+      h1 {
+        max-width: 780px;
+        margin: 0;
+        font-size: clamp(2.35rem, 6vw, 4.9rem);
+        line-height: 0.98;
+        letter-spacing: 0;
+      }
+
+      .updated {
+        margin: 0;
+        color: var(--muted);
+        font-size: 1rem;
+      }
+
+      .lead {
+        max-width: 760px;
+        margin: 0;
+        color: #393229;
+        font-size: clamp(1.08rem, 2vw, 1.28rem);
+      }
+
+      .privacy-note {
+        display: grid;
+        grid-template-columns: 14px 1fr;
+        gap: 14px;
+        align-items: start;
+        max-width: 760px;
+        margin-top: 4px;
+        padding: 18px 20px;
+        border: 1px solid rgba(154, 90, 36, 0.22);
+        border-radius: 14px;
+        background: rgba(255, 255, 255, 0.54);
+      }
+
+      .privacy-note::before {
+        content: "";
+        width: 10px;
+        height: 10px;
+        margin-top: 8px;
+        border-radius: 50%;
+        background: var(--accent);
+        box-shadow: 0 0 0 5px rgba(154, 90, 36, 0.14);
+      }
+
+      .privacy-note p {
+        margin: 0;
+        font-weight: 650;
+      }
+
+      .content {
+        display: grid;
+        gap: 16px;
+      }
+
+      section {
+        padding: 28px;
+        border: 1px solid var(--line);
+        border-radius: 16px;
+        background: rgba(255, 250, 242, 0.82);
+        box-shadow: 0 10px 28px rgba(72, 48, 24, 0.07);
+      }
+
+      h2 {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        margin: 0 0 12px;
+        font-size: clamp(1.2rem, 2vw, 1.45rem);
+        line-height: 1.25;
+      }
+
+      h2::before {
+        content: "";
+        flex: 0 0 auto;
+        width: 8px;
+        height: 28px;
+        border-radius: 999px;
+        background: var(--accent);
+      }
+
+      p {
+        margin: 0 0 14px;
+      }
+
+      p:last-child {
+        margin-bottom: 0;
+      }
+
+      ul {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 10px;
+        margin: 18px 0 0;
+        padding: 0;
+        list-style: none;
+      }
+
+      li {
+        position: relative;
+        min-height: 44px;
+        padding: 11px 14px 11px 36px;
+        border: 1px solid rgba(222, 210, 195, 0.9);
+        border-radius: 12px;
+        background: var(--panel-soft);
+        color: #332c24;
+      }
+
+      li::before {
+        content: "";
+        position: absolute;
+        left: 15px;
+        top: 18px;
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background: var(--accent);
+      }
+
+      .contact {
+        display: inline-flex;
+        width: fit-content;
+        max-width: 100%;
+        padding: 12px 14px;
+        border-radius: 12px;
+        background: var(--panel-soft);
+        font-weight: 650;
+        overflow-wrap: anywhere;
+      }
+
+      footer {
+        margin-top: 28px;
+        color: var(--muted);
+        text-align: center;
+        font-size: 0.92rem;
+      }
+
+      @media (max-width: 720px) {
+        main {
+          width: min(100% - 24px, 980px);
+          padding: 24px 0 48px;
+        }
+
+        .hero {
+          padding: 28px 22px;
+          border-radius: 16px;
+        }
+
+        section {
+          padding: 22px;
+        }
+
+        ul {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <header class="hero">
+        <p class="eyebrow">Privacy Policy</p>
+        <h1>Hi-Fi Privacy Policy</h1>
+        <p class="updated">Last updated: June 16, 2026</p>
+        <p class="lead">
+          Hi-Fi is designed as a local music player. The app lets you import
+          audio files from your device, organize them into stations, and play
+          them back on your device.
+        </p>
+        <div class="privacy-note">
+          <p>
+            Hi-Fi does not collect, sell, share, track, or transmit your
+            personal information.
+          </p>
+        </div>
+      </header>
+
+      <div class="content">
+        <section aria-labelledby="not-collected">
+          <h2 id="not-collected">Information We Do Not Collect</h2>
+          <p>Hi-Fi does not collect:</p>
+          <ul>
+            <li>Your name, email address, phone number, or contact information</li>
+            <li>Your location</li>
+            <li>Your contacts</li>
+            <li>Your photos or videos</li>
+            <li>Your browsing history</li>
+            <li>Analytics or advertising identifiers</li>
+            <li>Crash reports or diagnostic data sent to us</li>
+            <li>Listening history sent to us</li>
+            <li>Any data for advertising or tracking</li>
+          </ul>
+        </section>
+
+        <section aria-labelledby="audio-files">
+          <h2 id="audio-files">Audio Files and Stations</h2>
+          <p>
+            When you import audio files into Hi-Fi, those files are stored
+            locally on your device so the app can play them back and organize
+            them into stations.
+          </p>
+          <p>
+            Imported audio files, station names, track names, playback state,
+            and related library information remain on your device. They are not
+            uploaded to any server by Hi-Fi.
+          </p>
+          <p>
+            If you delete stations or audio files from within the app, the app
+            removes its local copy of that content from its own storage.
+          </p>
+        </section>
+
+        <section aria-labelledby="samples">
+          <h2 id="samples">Default Sample Files</h2>
+          <p>
+            Hi-Fi may include a small default sample station with bundled audio
+            files so users can try the app immediately. These bundled files are
+            included with the app and do not involve collecting any user data.
+          </p>
+        </section>
+
+        <section aria-labelledby="network">
+          <h2 id="network">Network Access</h2>
+          <p>
+            Hi-Fi does not require an account and does not send your music
+            library or personal data to a remote server.
+          </p>
+          <p>
+            If a future version adds online features, this Privacy Policy will
+            be updated before those features are released.
+          </p>
+        </section>
+
+        <section aria-labelledby="third-party">
+          <h2 id="third-party">Third-Party Services</h2>
+          <p>
+            Hi-Fi does not use third-party analytics, advertising networks, data
+            brokers, or tracking SDKs.
+          </p>
+        </section>
+
+        <section aria-labelledby="app-store">
+          <h2 id="app-store">App Store Privacy</h2>
+          <p>
+            Hi-Fi does not collect data as user data is processed and stored
+            locally on the device and is not transmitted off-device to the
+            developer or third parties.
+          </p>
+        </section>
+
+        <section aria-labelledby="children">
+          <h2 id="children">Children's Privacy</h2>
+          <p>
+            Hi-Fi does not collect personal information from children or anyone
+            else.
+          </p>
+        </section>
+
+        <section aria-labelledby="changes">
+          <h2 id="changes">Changes to This Policy</h2>
+          <p>
+            This Privacy Policy may be updated if the app's features or data
+            practices change. The updated version will be posted with a new
+            "Last updated" date.
+          </p>
+        </section>
+
+        <section aria-labelledby="contact">
+          <h2 id="contact">Contact</h2>
+          <p>If you have questions about this Privacy Policy, contact:</p>
+          <p class="contact">
+            <a href="mailto:shelain.fernando@gmail.com">shelain.fernando@gmail.com</a>
+          </p>
+        </section>
+      </div>
+
+      <footer>
+        <p>Hi-Fi Privacy Policy</p>
+      </footer>
+    </main>
+  </body>
+</html>
